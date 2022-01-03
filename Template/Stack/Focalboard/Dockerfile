@@ -3,13 +3,13 @@ FROM alpine/git:latest as repo
 RUN git clone -b main --depth 1 https://github.com/mattermost/focalboard.git /focalboard
 
 # Build webapp
-FROM node:16.3.0 as nodebuild
+FROM node:16.3.0-alpine as nodebuild
 WORKDIR /webapp
 COPY --from=repo /focalboard/webapp /webapp
 RUN export CFLAGS="$CFLAGS -DPNG_ARM_NEON_OPT=0" && npm install --no-optional && npm run pack
 
 # Build Go backend
-FROM golang:1.16.5 as gobuild
+FROM golang:1.16.5-alpine as gobuild
 WORKDIR /go/src/focalboard
 COPY --from=repo /focalboard /go/src/focalboard
 RUN sed -i "s/GOARCH=amd64/GOARCH=arm64/g" Makefile

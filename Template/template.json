@@ -24,7 +24,7 @@
                 }
             ],
             "image": "adguard/adguardhome:latest",
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/adguard.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/adguard.png",
             "name": "adguard",
             "platform": "linux",
             "ports": [
@@ -88,7 +88,7 @@
                 }
             ],
             "image": "linuxserver/code-server:latest",
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/code-server.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/code-server.png",
             "name": "code-server",
             "platform": "linux",
             "ports": [
@@ -123,7 +123,7 @@
                 }
             ],
             "image": "linuxserver/domoticz:latest",
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/domoticz.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/domoticz.png",
             "name": "domoticz",
             "platform": "linux",
             "ports": [
@@ -160,7 +160,7 @@
                 }
             ],
             "image": "filebrowser/filebrowser:latest",
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/filebrowser.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/filebrowser.png",
             "name": "filebrowser",
             "note": "The default user and password is admin/admin.",
             "platform": "linux",
@@ -193,7 +193,7 @@
                     "name": "PORT"
                 }
             ],
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/focalboard.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/focalboard.png",
             "name": "focalboard",
             "platform": "linux",
             "repository": {
@@ -210,7 +210,7 @@
             ],
             "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
             "image": "b4bz/homer:latest",
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/homer.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/homer.png",
             "name": "homer",
             "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
             "platform": "linux",
@@ -238,7 +238,7 @@
             ],
             "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
             "image": "jc21/nginx-proxy-manager",
-            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/main/Images/nginx-proxy-manager.png",
+            "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/nginx-proxy-manager.png",
             "name": "nginx-proxy-manager",
             "platform": "linux",
             "env": [
