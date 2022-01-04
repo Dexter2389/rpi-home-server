@@ -183,25 +183,31 @@
         },
         {
             "categories": [
-                "Productivity"
+                "Productivity",
+                "Tools"
             ],
-            "description": "[Experimental] Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
-            "env": [
-                {
-                    "default": "9810",
-                    "label": "PORT",
-                    "name": "PORT"
-                }
-            ],
+            "description": "Focalboard is an open source, self-hosted alternative to Trello, Notion, and Asana.",
+            "image": "dexter2389/focalboard:latest",
             "logo": "https://raw.githubusercontent.com/Dexter2389/rpi-home-server/master/Images/focalboard.png",
             "name": "focalboard",
+            "note": "This container requires a json file within the config volume.",
             "platform": "linux",
-            "repository": {
-                "stackfile": "Template/Stack/focalboard.yml",
-                "url": "https://github.com/Dexter2389/rpi-home-server/"
-            },
+            "ports": [
+                "9810:8000/tcp"
+            ],
+            "restart_policy": "unless-stopped",
             "title": "Focalboard",
-            "type": 3
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/portainer/Files/AppData/Focalboard/Data",
+                    "container": "/data"
+                },
+                {
+                    "bind": "/portainer/Files/AppData/Focalboard/config.json",
+                    "container": "/opt/focalboard/config.json"
+                }
+            ]
         },
         {
             "categories": [
